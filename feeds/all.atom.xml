@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>devsimsek - My Dev Journey</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2021-04-29T14:20:00+03:00</updated><subtitle>My Dev Journey</subtitle><entry><title>Lets Learn C++ | #1 Basics</title><link href="/lets-learn-cpp-the-basics.html" rel="alternate"></link><published>2021-04-29T14:20:00+03:00</published><updated>2021-04-29T14:20:00+03:00</updated><author><name>devsimsek</name></author><id>tag:None,2021-04-29:/lets-learn-cpp-the-basics.html</id><summary type="html">&lt;p&gt;I Have Just Finished Learning C++ And I Will Be Teaching You How To Learn C++!&lt;/p&gt;</summary><content type="html">&lt;hr&gt;
+&lt;p&gt;Welcome to my c++ dev journey! Today i will tell you about my thoughts. So lets begin!&lt;/p&gt;
+&lt;h2&gt;Why I Chose c++?&lt;/h2&gt;
+&lt;p&gt;c++ is great language but its not for beginners. If you want to learn c++ as your first language please go and learn
+some other language. Such as python!
+c++ is hard and complex language but that makes c++ even more interesting for me. I really like to challenge myself in
+computer science thats why i chose c++.&lt;/p&gt;
+&lt;h2&gt;Preparing Environment&lt;/h2&gt;
+&lt;p&gt;Firstly, you need an ide. I chose &lt;a href="https://www.jetbrains.com/clion/features/"&gt;CLion&lt;/a&gt;
+from &lt;a href="https://jetbrains.com"&gt;jetbrains&lt;/a&gt;. You can still use visual studio code. Then you will need an compiler to create
+your applications. I use cmake which comes with CLion. If you are using apple mac osx you can use gcc compiler which
+comes by default.&lt;/p&gt;
+&lt;h2&gt;Hello World!&lt;/h2&gt;
+&lt;p&gt;C++ has a basic structure for basic terminal applications. I will give sample code down bellow this line.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="cp"&gt;#include&lt;/span&gt; &lt;span class="cpf"&gt;&amp;lt;iostream&amp;gt;&lt;/span&gt;&lt;span class="c1"&gt; // including input/output stream to print console.&lt;/span&gt;&lt;span class="cp"&gt;&lt;/span&gt;
+&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;cout&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;Hello World!&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;endl&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Lets explain what we did here;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;#include &amp;lt;iostream&amp;gt;&lt;/code&gt;: By adding #include c++ will include your header files. If header file names has &amp;lt;&amp;gt; these
+flags it means it is global header. If you want to include your own local one use "" tags to do it.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;int main() {}&lt;/code&gt;: This is the main function that most of the compilers use. Basic structure of functions is &lt;em&gt;type
+name(variables) {code}&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;std::cout &amp;lt;&amp;lt; "Hello World!" &amp;lt;&amp;lt; std::endl;&lt;/code&gt; lets look line by line;
+&lt;code&gt;std::&lt;/code&gt;: std:: is a namespace for iostream. iostream is a basic input and output stream header for c++. it comes by
+global.
+&lt;code&gt;std::cout&lt;/code&gt;: cout is a simple way to print text through console.
+&lt;code&gt;&amp;lt;&amp;lt;&lt;/code&gt;: These tags are injection tags. In c++ and c we dont use +, . like most of the languages out there.
+&lt;code&gt;&amp;lt;&amp;lt; std::endl;&lt;/code&gt;: endl means endline. it will create new line when added into cout function.&lt;/p&gt;
+&lt;h2&gt;Thank you for reading&lt;/h2&gt;
+&lt;p&gt;Thanks for looking my devlog. I will try to update this log more! Please consider sharing this page with your friends!&lt;/p&gt;</content><category term="Learn"></category><category term="c++"></category><category term="devlog"></category><category term="learn"></category><category term="language"></category></entry></feed>

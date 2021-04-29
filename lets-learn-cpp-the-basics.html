@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="/theme/stylesheet/style.min.css">
+
+    <link id="dark-theme-style" rel="stylesheet" type="text/css"
+          media="(prefers-color-scheme: dark), (prefers-color-scheme: no-preference)"
+    href="/theme/stylesheet/dark-theme.min.css">
+
+    <link id="pygments-dark-theme" rel="stylesheet" type="text/css"
+              media="(prefers-color-scheme: dark), (prefers-color-scheme: no-preference)"
+          href="/theme/pygments/monokai.min.css">
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+              media="(prefers-color-scheme: light)"
+          href="/theme/pygments/emacs.min.css">
+
+
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/solid.css">
+
+
+    <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="devsimsek - My Dev Journey Atom">
+
+
+
+  
+
+
+<meta name="author" content="devsimsek" />
+<meta name="description" content="I Have Just Finished Learning C++ And I Will Be Teaching You How To Learn C++!" />
+<meta name="keywords" content="c++, devlog, learn, language">
+
+
+<meta property="og:site_name" content="devsimsek - My Dev Journey"/>
+<meta property="og:title" content="Lets Learn C++ | #1 Basics"/>
+<meta property="og:description" content="I Have Just Finished Learning C++ And I Will Be Teaching You How To Learn C++!"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="/lets-learn-cpp-the-basics.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2021-04-29 14:20:00+03:00"/>
+<meta property="article:modified_time" content=""/>
+<meta property="article:author" content="/author/devsimsek.html">
+<meta property="article:section" content="Learn"/>
+<meta property="article:tag" content="c++"/>
+<meta property="article:tag" content="devlog"/>
+<meta property="article:tag" content="learn"/>
+<meta property="article:tag" content="language"/>
+<meta property="og:image" content="/images/logo.png">
+
+  <title>devsimsek - My Dev Journey &ndash; Lets Learn C++ | #1 Basics</title>
+
+</head>
+<body >
+  <aside>
+    <div>
+      <a href="">
+        <img src="/images/logo.png" alt="@devsimsek" title="@devsimsek">
+      </a>
+
+      <h1>
+        <a href="">@devsimsek</a>
+      </h1>
+
+<p>My Dev Journey</p>
+
+      <nav>
+        <ul class="list">
+
+
+
+            <li>
+              <a target="_self" href="/" >Home</a>
+            </li>
+            <li>
+              <a target="_self" href="/archives.html" >Archives</a>
+            </li>
+            <li>
+              <a target="_self" href="/categories.html" >Categories</a>
+            </li>
+            <li>
+              <a target="_self" href="/tags.html" >Tags</a>
+            </li>
+        </ul>
+      </nav>
+
+      <ul class="social">
+          <li>
+            <a  class="sc-rss" href="https://smsk.me" target="_blank">
+              <i class="fas fa-rss"></i>
+            </a>
+          </li>
+          <li>
+            <a  class="sc-github" href="https://github.com/devsimsek" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+      </ul>
+    </div>
+
+  </aside>
+  <main>
+
+    <nav>
+      <a href="">Home</a>
+
+      <a href="/archives.html">Archives</a>
+      <a href="/categories.html">Categories</a>
+      <a href="/tags.html">Tags</a>
+
+      <a href="/feeds/all.atom.xml">Atom</a>
+
+    </nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="lets-learn-cpp-the-basics">Lets Learn C++ | #1 Basics</h1>
+    <p>
+      Posted on Per 29 Nisan 2021 in <a href="/category/learn.html">Learn</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <hr>
+<p>Welcome to my c++ dev journey! Today i will tell you about my thoughts. So lets begin!</p>
+<h2>Why I Chose c++?</h2>
+<p>c++ is great language but its not for beginners. If you want to learn c++ as your first language please go and learn
+some other language. Such as python!
+c++ is hard and complex language but that makes c++ even more interesting for me. I really like to challenge myself in
+computer science thats why i chose c++.</p>
+<h2>Preparing Environment</h2>
+<p>Firstly, you need an ide. I chose <a href="https://www.jetbrains.com/clion/features/">CLion</a>
+from <a href="https://jetbrains.com">jetbrains</a>. You can still use visual studio code. Then you will need an compiler to create
+your applications. I use cmake which comes with CLion. If you are using apple mac osx you can use gcc compiler which
+comes by default.</p>
+<h2>Hello World!</h2>
+<p>C++ has a basic structure for basic terminal applications. I will give sample code down bellow this line.</p>
+<div class="highlight"><pre><span></span><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="c1"> // including input/output stream to print console.</span><span class="cp"></span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Hello World!&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<p>Lets explain what we did here;</p>
+<p><code>#include &lt;iostream&gt;</code>: By adding #include c++ will include your header files. If header file names has &lt;&gt; these
+flags it means it is global header. If you want to include your own local one use "" tags to do it.</p>
+<p><code>int main() {}</code>: This is the main function that most of the compilers use. Basic structure of functions is <em>type
+name(variables) {code}</em></p>
+<p><code>std::cout &lt;&lt; "Hello World!" &lt;&lt; std::endl;</code> lets look line by line;
+<code>std::</code>: std:: is a namespace for iostream. iostream is a basic input and output stream header for c++. it comes by
+global.
+<code>std::cout</code>: cout is a simple way to print text through console.
+<code>&lt;&lt;</code>: These tags are injection tags. In c++ and c we dont use +, . like most of the languages out there.
+<code>&lt;&lt; std::endl;</code>: endl means endline. it will create new line when added into cout function.</p>
+<h2>Thank you for reading</h2>
+<p>Thanks for looking my devlog. I will try to update this log more! Please consider sharing this page with your friends!</p>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="/tag/c.html">c++</a>
+      <a href="/tag/devlog.html">devlog</a>
+      <a href="/tag/learn.html">learn</a>
+      <a href="/tag/language.html">language</a>
+    </p>
+  </div>
+
+
+
+
+
+<!-- Disqus -->
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'localhost';
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>
+    Please enable JavaScript to view comments.
+</noscript>
+<!-- End Disqus -->
+</article>
+
+    <footer>
+<p>
+  &copy;  devsimsek - This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/deed.en_US" target="_blank">Creative Commons Attribution-ShareAlike</a>
+</p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+  <span class="footer-separator">|</span>
+  Switch to the <a href="javascript:void(0)" onclick="theme.switch(`dark`)">dark</a> | <a href="javascript:void(0)" onclick="theme.switch(`light`)">light</a> | <a href="javascript:void(0)" onclick="theme.switch(`browser`)">browser</a> theme
+  <script id="dark-theme-script"
+          src="/theme/dark-theme/dark-theme.min.js"
+          data-enable-auto-detect-theme="True"
+          data-default-theme="dark"
+          type="text/javascript">
+  </script>
+</p><p>
+  <a rel="license"
+     href="http://creativecommons.org/licenses/by-sa/4.0/"
+     target="_blank">
+    <img alt="Creative Commons License"
+         title="Creative Commons License"
+         style="border-width:0"
+           src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png"
+         width="80"
+         height="15"/>
+  </a>
+</p>    </footer>
+  </main>
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " devsimsek - My Dev Journey ",
+  "url" : "",
+  "image": "/images/logo.png",
+  "description": "My development journey project on github pages!"
+}
+</script>
+
+</body>
+</html>
