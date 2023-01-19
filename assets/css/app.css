@@ -16,6 +16,11 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+*:disabled {
+    opacity: 0.6;
+    cursor: not-allowed !important;
+}
+
 .hero {
     border-radius: .5rem;
     background: var(--gray);
@@ -300,6 +305,10 @@ img {
     color: var(--gray-100)
 }
 
+.text-white {
+    color: white
+}
+
 .text-rb {
     background-clip: text !important;
     -webkit-background-clip: text !important;
@@ -381,6 +390,11 @@ img {
     padding: 4px 8px;
     text-align: center;
     border-radius: 5px;
+}
+
+.alert {
+    padding: .25rem;
+    border-radius: .5rem;
 }
 
 a {

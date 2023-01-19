@@ -9,13 +9,14 @@ fetch('https://api.github.com/users/devsimsek/repos', {
 }).then(response => response.json()).then(data => {
     const projectsContainer = document.querySelector('#projects-container');
     let i = 0;
+    let hash = generateUniqueHash(); // Avoid too many requests
     data.sort((a, b) => {
         return new Date(b.updated_at).getTime() - new Date(a.updated_at).getTime()
     }).forEach(project => {
         if (i <= 5) {
             let project_e = document.createElement("div")
             if (project["description"] === null) project["description"] = "No description, website, or topics provided."
-            project_e.innerHTML = '<div class="project-container flex-inline"><img class="post-image" src="https://opengraph.githubassets.com/' + generateUniqueHash() + '/devsimsek/' + project["name"] + '" alt="Post image"><div class="text-end"><a href="' + project["html_url"] + '" class="heading h3 bold text-red">' + project["name"] + '</a><p class="ms-2">' + project["description"] + '</p></div></div>'
+            project_e.innerHTML = '<div class="project-container flex-inline"><img class="post-image" src="https://opengraph.githubassets.com/' + hash + '/devsimsek/' + project["name"] + '" alt="Post image"><div class="text-end"><a href="' + project["html_url"] + '" class="heading h3 bold text-red">' + project["name"] + '</a><p class="ms-2">' + project["description"] + '</p></div></div>'
             projectsContainer.appendChild(project_e)
         }
         i++
