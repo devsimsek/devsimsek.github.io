@@ -1,0 +1,99 @@
+<html>
+<head>
+    <link rel="stylesheet" href="/assets/css/normalize.css">
+    <link rel="stylesheet" href="/assets/css/app.css">
+    <title>Metin Şimşek | Sophisticated Tech Developer</title>
+    <script src="/assets/js/api.js"></script>
+</head>
+<body>
+<!-- navigation bar -->
+<header class="navigation m-1">
+    <ul class="nav-links">
+        <li class="active me-1"><span class="bi bi-house"></span></li>
+        <li class="me-1"><a href="https://stories.smsk.me"><span class="bi bi-newspaper"></span></a></li>
+        <li class="me-1"><a href="#projects"><span class="bi bi-kanban"></span></a></li>
+        <li class="me-1"><a href="https://github.com/devsimsek"><span class="bi bi-github"></span></a></li>
+        <li class="me-1"><a href="https://linkedin.com/in/devsimsek"><span class="bi bi-linkedin"></span></a></li>
+        <li class="me-1"><a onclick="runSearch()"><span class="bi bi-search"></span></a></li>
+    </ul>
+</header>
+<img class="logo-image m-1" src="https://avatars.githubusercontent.com/u/75851971">
+<!-- end navigation bar -->
+<main class="container my-4 p-1">
+    <!-- welcome hero -->
+    <section class="hero m-3 p-2">
+        <div class="hero-body flex-inline gap text-center items-center">
+            <div class="hero-content text-start">
+                <h2 class="heading h1 text-rb"><span id="hero_welcome">Hi</span>, I'm Metin Şimşek</h2>
+                <p>I am a self thought developer who is trying to make development easier and accessible for everyone. I
+                    love to share what I've developed with people whom i've never met!</p>
+                <p>I develop frameworks, opensource database projects, ai models and software solutions for
+                    everyone.</p>
+                <p>By everyone I mean literally everyone, like a person can create <u>applications</u> or <a
+                    href="https://github.com/devsimsek/WordFlow">blogs</a
+                > just using microsoft word!</p>
+                <h5 class="heading h3 text-rb">A Little About My History</h5>
+                <p>I started struggling with computers when I was 6. My first ever project was to develop a robot using
+                    the Arduino Uno and Mini with the powers of c++.</p>
+                <p>With the free time I got when I was home from school in middle school, I made myself focus on the
+                    software side of computers. And thats how I learned php, web technologies.</p>
+                <p>So, in short, I've fallen in love with computers, and developing new stuff is my biggest desire.</p>
+                <h5 class="heading h3 text-rb">Subscribe to my newsletter</h5>
+                <form class="flex">
+                    <input type="email" placeholder="Email Adress" class="me-1 w-100">
+                    <button type="submit" class="btn bg-red">Subscribe</button>
+                </form>
+            </div>
+            <div class="hero-media">
+                <img class="hero-image lazyload"
+                     src="/assets/images/devsimsek.jpeg">
+            </div>
+        </div>
+    </section>
+    <!-- end welcome hero -->
+    <!-- projects -->
+    <section class="section m-3" id="projects">
+        <h2 class="section-title section-title-end">My Projects</h2>
+        <div id="projects-container"></div>
+    </section>
+    <!-- end projects -->
+    <!-- latest posts (fetch from stories) -->
+    <section class="section m-3" id="posts">
+        <h2 class="section-title section-title-start">Latest Posts</h2>
+        <div id="posts-container"></div>
+    </section>
+    <!-- end latest posts -->
+    <!-- contact -->
+    <section class="section m-3" id="contact">
+        <h2 class="section-title section-title-center">Contact Me</h2>
+        <form class="gap my-4">
+            <input type="email" placeholder="Email Adress" class="my-2 w-100">
+            <input type="email" placeholder="Email Adress" class="my-2 w-100">
+            <textarea placeholder="My Message" class="my-2 w-100"></textarea>
+            <button type="submit" class="btn bg-red w-100">Contact Me</button>
+        </form>
+    </section>
+    <!-- end contact -->
+</main>
+<div id="searchbar" class="hidden">
+    <section class="section modal">
+        <div class="modal-container p-2">
+            <div class="flex-inline">
+                <h2 class="section-title section-title-start">Search</h2>
+                <span onclick="closeModal(this)" class="close bi bi-x"></span>
+            </div>
+            <form class="flex">
+                <input id="searchinput" type="text" placeholder="Posts, projects, docs (soon)..."
+                       class="me-1 w-100">
+                <button type="submit" class="btn bg-red">Search</button>
+            </form>
+            <div id="searchresults" class="hidden"></div>
+        </div>
+    </section>
+</div>
+<footer class="mx-1 my-2 text-center text-gray">
+    <span>Copyright (C)devsimsek</span>
+</footer>
+<script src="/assets/js/app.js"></script>
+</body>
+</html>
