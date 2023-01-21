@@ -492,7 +492,7 @@ button {
     border: unset;
 }
 
-@media all and (max-width: 600px) and (orientation: landscape) {
+@media all and (max-width: 1024px) {
     .navigation {
         position: fixed;
         display: block;
@@ -517,6 +517,26 @@ button {
     .hero-content .flex * {
         margin-top: .5rem;
         width: 100%;
+    }
+
+    .flex-inline {
+        display: block;
+    }
+
+    .project-container {
+        margin-bottom: 2rem;
+    }
+
+    .post-container {
+        margin-bottom: 2rem;
+    }
+
+    .post-image {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin: .25rem;
+        transition: 0.3s;
     }
 }
 
