@@ -492,7 +492,7 @@ button {
     border: unset;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 500px) {
     .navigation {
         position: fixed;
         display: block;
